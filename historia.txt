@@ -1,0 +1,300 @@
+User@DESKTOP-1M0KV5N MINGW64 ~/prework (master)
+$ git log -p piosenka.txt
+commit f6673cea6063f706e959f8a64484686a7cc92716 (HEAD -> master)
+Author: Kasia Jankowska <ksobinska@gmail.com>
+Date:   Tue Jun 8 21:56:02 2021 +0200
+
+    aktualizacja refrenow w piosence
+
+diff --git a/piosenka.txt b/piosenka.txt
+index 2f3ba1b..f0b31f9 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -2,8 +2,8 @@ refren1.txt
+
+ zwrotka2.txt
+
+-refren2.txt
++refren1.txt
+
+ zwrotka1.txt
+
+-refren3.txt
++refren1.txt
+
+commit 3b5a047e137e6c6a171d7aee20726c22de68f22d
+Author: Kasia Jankowska <ksobinska@gmail.com>
+Date:   Tue Jun 8 21:45:31 2021 +0200
+
+    initial wersja skrocona
+
+diff --git a/piosenka.txt b/piosenka.txt
+index 00f8b0d..2f3ba1b 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -1,68 +1,9 @@
+-Human beings in a mob
+-What's a mob to a king?
+-What's a king to a God?
+-What's a God to a non-believer
+-Who don't believe in anything?
+-Will he make it out alive?
+-Alright, alright
+-No church in the wild
++refren1.txt
+
+-Tears on the mausoleum floor
+-Blood stains the Coliseum doors
+-Lies on the lips of a priest
+-Thanksgiving disguised as a feast
+-Rollin' in the Rolls-Royce Corniche
+-Only the doctors got this, I'm hidin' from police
+-Cocaine seats
+-All white like I got the whole thing bleached
+-Drug dealer chic
+-I'm wonderin' if a thug's prayers reach
+-Is Pious pious 'cause God loves pious?
+-Socrates asks, "Whose bias do y'all seek?"
+-All for Plato, screech
+-I'm out chere' ballin', I know y'all hear my sneaks
+
+User@DESKTOP-1M0KV5N MINGW64 ~/prework (master)
+$ git log -p refren1.txt
+commit 21a970c02ae5992595707753d574b665cb7f02d7
+Author: Kasia Jankowska <ksobinska@gmail.com>
+Date:   Tue Jun 8 21:34:46 2021 +0200
+
+    Revert "zmiana tekstu refrenu"
+
+    This reverts commit 51723434e33010b57f4a50f766c74eb73a0cc79c.
+
+diff --git a/refren1.txt b/refren1.txt
+index 15b19e4..adf6b59 100644
+--- a/refren1.txt
++++ b/refren1.txt
+@@ -5,3 +5,4 @@ What's a God to a non-believer
+ Who don't believe in anything?
+ Will he make it out alive?
+ Alright, alright
++No church in the wild
+
+commit 51723434e33010b57f4a50f766c74eb73a0cc79c
+Author: Kasia Jankowska <ksobinska@gmail.com>
+Date:   Tue Jun 8 21:31:13 2021 +0200
+
+    zmiana tekstu refrenu
+
+diff --git a/refren1.txt b/refren1.txt
+index adf6b59..15b19e4 100644
+--- a/refren1.txt
++++ b/refren1.txt
+@@ -5,4 +5,3 @@ What's a God to a non-believer
+ Who don't believe in anything?
+ Will he make it out alive?
+ Alright, alright
+-No church in the wild
+
+commit a95f06c2a4bb0f9d3930a3d03f1226e70172b977
+Author: Kasia Jankowska <ksobinska@gmail.com>
+Date:   Tue Jun 8 21:14:54 2021 +0200
+
+    zwrotki i refreny
+
+diff --git a/refren1.txt b/refren1.txt
+new file mode 100644
+index 0000000..adf6b59
+--- /dev/null
++++ b/refren1.txt
+@@ -0,0 +1,8 @@
++Human beings in a mob
++What's a mob to a king?
++What's a king to a God?
++What's a God to a non-believer
++Who don't believe in anything?
++Will he make it out alive?
++Alright, alright
++No church in the wild
+
+User@DESKTOP-1M0KV5N MINGW64 ~/prework (master)
+$ User@DESKTOP-1M0KV5N MINGW64 ~/prework (master)
+bash: syntax error near unexpected token `('
+commit 21a970c02ae5992595707753d574b665cb7f02d7
+Author: Kasia Jankowska <ksobinska@gmail.com>
+Date:   Tue Jun 8 21:34:46 2021 +0200
+
+    Revert "zmiana tekstu refrenu"
+
+    This reverts commit 51723434e33010b57f4a50f766c74eb73a0cc79c.
+
+diff --git a/refren1.txt b/refren1.txt
+index 15b19e4..adf6b59 100644
+--- a/refren1.txt
++++ b/refren1.txt
+@@ -5,3 +5,4 @@ What's a God to a non-believer
+ Who don't believe in anything?
+ Will he make it out alive?
+ Alright, alright
++No church in the wild
+
+commit 51723434e33010b57f4a50f766c74eb73a0cc79c
+Author: Kasia Jankowska <ksobinska@gmail.com>
+Date:   Tue Jun 8 21:31:13 2021 +0200
+
+    zmiana tekstu refrenu
+
+diff --git a/refren1.txt b/refren1.txt
+index adf6b59..15b19e4 100644
+--- a/refren1.txt
++++ b/refren1.txt
+@@ -5,4 +5,3 @@ What's a God to a non-believer
+ Who don't believe in anything?
+ Will he make it out alive?
+ Alright, alright
+-No church in the wild
+
+commit a95f06c2a4bb0f9d3930a3d03f1226e70172b977
+Author: Kasia Jankowska <ksobinska@gmail.com>
+Date:   Tue Jun 8 21:14:54 2021 +0200
+
+    zwrotki i refreny
+
+diff --git a/refren1.txt b/refren1.txt
+new file mode 100644
+index 0000000..adf6b59
+--- /dev/null
++++ b/refren1.txt
+@@ -0,0 +1,8 @@
++Human beings in a mob
++What's a mob to a king?
++What's a king to a God?
++What's a God to a non-believer
++Who don't believe in anything?
++Will he make it out alive?
++Alright, alright
++No church in the wild
+
+User@DESKTOP-1M0KV5N MINGW64 ~/prework (master)
+$ git log -p refren2.txt
+commit d6a4ebe7bd505057ed8fa5ed69a2c2f04943f787
+Author: Kasia Jankowska <ksobinska@gmail.com>
+Date:   Tue Jun 8 21:17:36 2021 +0200
+
+    zwrotki i refreny
+
+diff --git a/refren2.txt b/refren2.txt
+new file mode 100644
+index 0000000..adf6b59
+--- /dev/null
++++ b/refren2.txt
+@@ -0,0 +1,8 @@
++Human beings in a mob
++What's a mob to a king?
++What's a king to a God?
++What's a God to a non-believer
++Who don't believe in anything?
++Will he make it out alive?
++Alright, alright
++No church in the wild
+
+User@DESKTOP-1M0KV5N MINGW64 ~/prework (master)
+$ git log -p refren3.txt
+commit 69cb929b93a7e4979a1a7fdbba111f460e3aefbe
+Author: Kasia Jankowska <ksobinska@gmail.com>
+Date:   Tue Jun 8 21:20:32 2021 +0200
+
+    zwrotki i refreny
+
+diff --git a/refren3.txt b/refren3.txt
+new file mode 100644
+index 0000000..adf6b59
+--- /dev/null
++++ b/refren3.txt
+@@ -0,0 +1,8 @@
++Human beings in a mob
++What's a mob to a king?
++What's a king to a God?
++What's a God to a non-believer
++Who don't believe in anything?
++Will he make it out alive?
++Alright, alright
++No church in the wild
+
+User@DESKTOP-1M0KV5N MINGW64 ~/prework (master)
+$ git log -p zwrotka1.txt
+commit 4cc4579b95255eb0ce2cfd19be8d8c27ed6c73db
+Author: Kasia Jankowska <ksobinska@gmail.com>
+Date:   Tue Jun 8 21:46:18 2021 +0200
+
+    zwrotki i refreny
+
+diff --git a/zwrotka1.txt b/zwrotka1.txt
+index e69de29..c806b9b 100644
+--- a/zwrotka1.txt
++++ b/zwrotka1.txt
+@@ -0,0 +1,25 @@
++I live by you, desire
++I stand by you, walk through the fire
++Your love, is my scripture
++Let me into your encryption, yeah yeah
++Coke on her black skin made a stripe like a zebra
++I call that jungle fever
++You will not control the threesome
++Just roll the weed up until I get me some
++We formed a new religion
++No sins as long as there's permission
++And deception is the only felony
++So never fuck nobody without tellin' me
++Sunglasses and Advil
++Last night was mad real
++Sun comin' up five a.m.
++I wonder if they got cabs still
++Thinkin' 'bout the girl in all-leopard
++Who was rubbin' the wood like Kiki Shepard
++Two tattoos, one read "no apologies"
++The other said "love is cursed by monogamy"
++That's somethin' that the pastor don't preach
++That's somethin' that a teacher can't teach
++When we die, the money we can't keep
++But we prolly spend it all 'cause the pain ain't cheap, preach
++
+
+commit 42753f19672bbfa3f9137d065d8982ed2c41f27c
+Author: Kasia Jankowska <ksobinska@gmail.com>
+Date:   Tue Jun 8 21:19:31 2021 +0200
+
+    zwrotki i refreny
+
+diff --git a/zwrotka1.txt b/zwrotka1.txt
+new file mode 100644
+index 0000000..e69de29
+
+User@DESKTOP-1M0KV5N MINGW64 ~/prework (master)
+$ git log -p zwrotka2.txt
+commit 77d10f92d165eb3941afc4e5dd1333307f2a5bd3
+Author: Kasia Jankowska <ksobinska@gmail.com>
+Date:   Tue Jun 8 21:16:22 2021 +0200
+
+    zwrotki i refreny
+
+diff --git a/zwrotka2.txt b/zwrotka2.txt
+new file mode 100644
+index 0000000..3c619ae
+--- /dev/null
++++ b/zwrotka2.txt
+@@ -0,0 +1,16 @@
++Tears on the mausoleum floor
++Blood stains the Coliseum doors
++Lies on the lips of a priest
++Thanksgiving disguised as a feast
++Rollin' in the Rolls-Royce Corniche
++Only the doctors got this, I'm hidin' from police
++Cocaine seats
++All white like I got the whole thing bleached
++Drug dealer chic
++I'm wonderin' if a thug's prayers reach
++Is Pious pious 'cause God loves pious?
++Socrates asks, "Whose bias do y'all seek?"
++All for Plato, screech
++I'm out chere' ballin', I know y'all hear my sneaks
++Jesus was a carpenter, Yeezy, laid beats
++Hova flow the Holy Ghost, get the hell up out your seats, preach
